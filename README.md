@@ -36,7 +36,7 @@ Then import the _assemble-forms.css file from your css file.
 Override variables here before the Assemble Components are loaded.
 */
 
-@import '../node_modules/assemble-buttons/assemble-forms';
+@import '../node_modules/assemble-forms/assemble-forms';
 ```
 
 ## Types
