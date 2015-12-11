@@ -1,0 +1,277 @@
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/**
+ *  GENERAL
+ *  CHECKBOXES & RADIOS
+ *  FORM ERRORS
+ *  INPUT INLINE
+ *  INPUT ADDON
+*/
+
+/**
+ *  Highly influenced by inuit.css from @csswizardry
+ */
+
+
+
+
+
+/*------------------------------------*\
+    !GENERAL
+\*------------------------------------*/
+
+[class^='form-'] > li > input,
+[class^='form-'] > li > textarea,
+[class^='form-'] > li > select{
+    display: block;
+    width: 100%;
+}
+
+input,
+select,
+textarea{
+    height: $form-item-height;
+    padding: $form-item-padding;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: $form-item-border-style $form-item-border-size $form-item-border-color;
+    border-radius: $form-item-border-radius;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: $form-focus-border-color;
+    color: $form-focus-text-color;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+textarea{
+    cursor: text;
+}
+
+@if $form-spoken == true{
+    .form-spoken input,
+    .form-spoken select{
+        height: $form-spoken-height;
+        margin: 0 5px;
+        padding: $form-spoken-padding-input;
+    }
+
+    .form-spoken select{
+        padding: $form-spoken-padding-select;
+        background-position: right $form-select-arrow-spoken-ypos;
+    }
+}
+
+@if $customize-webkit-forms == true{
+    input[type=color],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=datetime],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    select,
+    textarea{
+        -webkit-appearance: none;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 0){
+        select{
+            padding-right: 1.67em;
+            background-image: $webkit-select-arrow;
+            background-repeat: no-repeat;
+            background-position: right $form-select-arrow-ypos;
+        }
+
+        .spoken-form select{
+            padding-right: 10px;
+        }
+    }
+}
+
+input[type='file']{
+    padding-top: $form-item-file-padding;
+}
+
+textarea{
+    height: $form-textarea-height;
+}
+
+input,
+textarea{
+    background: $form-input-background;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    !CHECKBOXES & RADIOS
+\*------------------------------------*/
+
+.check-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.check-list li{
+    margin-top: $form-check-list-vertical-spacing;
+}
+
+.check-list--inline{
+    clear: fix;
+}
+
+.check-list--inline li{
+    margin-right: 10px;
+    float: left;
+}
+
+input[type='checkbox'],
+input[type='radio']{
+    height: auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+    !FORM ERRORS
+\*------------------------------------*/
+
+.form-error > label,
+.form-error > .label{
+    color: $form-label-error-color;
+}
+
+.form-error input[type="text"]{
+    border: $form-error-border-type $form-error-border-color $form-error-border-size;
+}
+
+.form-error__message{
+    color: $form-error-message-color;
+    font-size: $form-error-message-size;
+}
+
+
+
+
+
+/*------------------------------------*\
+    !FORM DISABLED
+\*------------------------------------*/
+
+@if $form-disabled == true{
+   .form-disabled label{
+        color: $form-disabled-label-color;
+    }
+
+    .form-disabled label:hover{
+        cursor: not-allowed;
+    }
+
+    .form-disabled input{
+        border-color: $form-disabled-border-color;
+        background-color: $form-disabled-bg-color;
+    }
+
+    .form-disabled input:hover{
+        cursor: not-allowed;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    !INPUT INLINE
+\*------------------------------------*/
+
+@if $input-inline == true{
+    .form-inline{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .form-inline label{
+        display: block;
+    }
+
+    .form-inline > li{
+        clear: fix;
+
+    }
+
+    .form-inline > li > input{
+        display: inline;
+        width: auto;
+        float: left;
+    }
+
+    .form-inline .btn{
+        height: $form-item-height;
+        float: left;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    !INPUT ADDON
+\*------------------------------------*/
+
+@if $input-addon == true{
+    .input-addon{
+        position: relative;
+    }
+
+    .input-addon input{
+        width: 100%;
+    }
+
+    .input-addon .iconic{
+        @include absolute();
+        @include square($form-icon-size);
+    }
+
+    .input-addon--left input{
+        padding-left: $form-icon-padding-side;
+    }
+
+    .input-addon--left .iconic{
+        top: $form-icon-top-indent;
+        left: $form-icon-top-indent;
+    }
+
+    .input-addon--right input{
+        padding-right: $form-icon-padding-side;
+    }
+
+    .input-addon--right .iconic{
+        top: $form-icon-top-indent;
+        right: $form-icon-side-indent;
+    }
+}
