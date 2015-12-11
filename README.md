@@ -15,12 +15,12 @@ npm install assemble-forms --save-dev
 ```js
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var assembleCore = require('assemble-core');
+var assembleBase = require('assemble-base');
 var assembleForms = require('assemble-forms');
 
 gulp.task('css', function () {
     var processors = [
-        assembleCore,
+        assembleBase,
         assembleForms
     ];
     return gulp.src('./src/*.css')
