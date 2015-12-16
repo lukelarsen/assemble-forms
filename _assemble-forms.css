@@ -119,7 +119,8 @@ select{
     background: $form-input-background;
 }
 
-label{
+label,
+.label{
     color: $form-label-color;
 }
 
