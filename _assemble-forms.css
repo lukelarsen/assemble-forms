@@ -119,6 +119,10 @@ select{
     background: $form-input-background;
 }
 
+label{
+    color: $form-label-color;
+}
+
 
 
 

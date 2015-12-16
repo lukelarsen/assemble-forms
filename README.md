@@ -236,6 +236,15 @@ Options are set with variables. These variables are already set with their defau
 $form-text-color: #FFF;
 ```
 
+##### $form-label-color
+- Color of the labels.
+- Default: #00F;
+- Type: Color
+```css
+$form-label-color: #FFF;
+```
+
+
 ##### $form-item-push-bottom
 - Space between form rows.
 - Default: 10px;
