@@ -228,6 +228,14 @@ Options are set with variables. These variables are already set with their defau
 
 ### Design Variables
 
+##### $form-text-color
+- Color of the text in inputs, selects, and textareas.
+- Default: #00F;
+- Type: Color
+```css
+$form-text-color: #FFF;
+```
+
 ##### $form-item-push-bottom
 - Space between form rows.
 - Default: 10px;

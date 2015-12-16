@@ -37,6 +37,7 @@ textarea{
     border: $form-item-border-style $form-item-border-size $form-item-border-color;
     border-radius: $form-item-border-radius;
     outline: none;
+    color: $form-text-color;
 }
 
 input:focus,
@@ -93,9 +94,9 @@ textarea{
     @media (-webkit-min-device-pixel-ratio: 0){
         select{
             padding-right: 1.67em;
-            background-image: $webkit-select-arrow;
-            background-repeat: no-repeat;
-            background-position: right $form-select-arrow-ypos;
+            background-image: $webkit-select-arrow !important;
+            background-repeat: no-repeat !important;
+            background-position: right $form-select-arrow-ypos center !important;
         }
 
         .spoken-form select{
@@ -113,7 +114,8 @@ textarea{
 }
 
 input,
-textarea{
+textarea,
+select{
     background: $form-input-background;
 }
 
