@@ -771,7 +771,7 @@ Usage
 ```
 
 ##### $input-addon
-- Turn on/off addon forms. A class of .form-addon will be generated if true.
+- Turn on/off addon forms. A class of .input-addon will be generated if true.
 - Default: false;
 - Type: Boolean
 ```css

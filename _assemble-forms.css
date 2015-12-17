@@ -260,8 +260,8 @@ input[type='radio']{
     }
 
     .input-addon .iconic{
-        @include absolute();
-        @include square($form-icon-size);
+        position: absolute;
+        size: $form-icon-size;
     }
 
     .input-addon--left input{
