@@ -761,13 +761,17 @@ $input-inline: true;
 ```
 Usage
 ```html
-<ul class="form-inline">
-    <li>
-        <label>Search</label>
-        <input type="text">
-        <button class="btn">Button</button>
-    </li>
-</ul>
+<form>
+    <ul class="form-inline">
+        <li>
+            <label>URL Params</label>
+            <div class="form-inline__container">
+                <input type="text">
+                <button class="btn  btn--neutral">Update</button>
+            </div>
+        </li>
+    </ul>
+</form>
 ```
 
 ##### $input-addon
