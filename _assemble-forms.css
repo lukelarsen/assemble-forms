@@ -93,7 +93,7 @@ textarea{
 
     @media (-webkit-min-device-pixel-ratio: 0){
         select{
-            padding-right: 1.67em;
+            padding-right: $webkit-select-padding-right;
             background-image: $webkit-select-arrow !important;
             background-repeat: no-repeat !important;
             background-position: right $form-select-arrow-ypos center !important;
