@@ -1,6 +1,6 @@
 {
   "name": "assemble-forms",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Forms for the Assemble CSS Framework.",
   "main": "assemble-forms.css",
   "scripts": {
