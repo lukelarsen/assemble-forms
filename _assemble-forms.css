@@ -33,11 +33,11 @@ select,
 textarea{
     height: $form-item-height;
     padding: $form-item-padding;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     border: $form-item-border-style $form-item-border-size $form-item-border-color;
     border-radius: $form-item-border-radius;
     outline: none;
     color: $form-text-color;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 input:focus,
@@ -140,7 +140,7 @@ label,
 }
 
 .check-list label{
-    cursor: hover;
+    cursor: pointer;
 }
 
 .check-list li{
@@ -174,7 +174,7 @@ input[type='radio']{
     color: $form-label-error-color;
 }
 
-.form-error input[type="text"]{
+.form-error input[type='text']{
     border: $form-error-border-type $form-error-border-color $form-error-border-size;
 }
 
@@ -192,7 +192,7 @@ input[type='radio']{
 \*------------------------------------*/
 
 @if $form-disabled == true{
-   .form-disabled label{
+    .form-disabled label{
         color: $form-disabled-label-color;
     }
 
