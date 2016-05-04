@@ -139,6 +139,10 @@ label,
     list-style: none;
 }
 
+.check-list label{
+    cursor: hover;
+}
+
 .check-list li{
     margin-top: $form-check-list-vertical-spacing;
 }
