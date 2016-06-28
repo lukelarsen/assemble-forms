@@ -225,10 +225,6 @@ input[type='radio']{
         list-style: none;
     }
 
-    .form-inline label{
-        display: block;
-    }
-
     .form-inline .btn{
         height: $form-item-height;
     }
