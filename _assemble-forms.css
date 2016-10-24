@@ -261,7 +261,7 @@ input[type='radio']{
         width: 100%;
     }
 
-    .input-addon .iconic{
+    .input-addon .icon{
         position: absolute;
         size: $form-icon-size;
     }
@@ -270,7 +270,7 @@ input[type='radio']{
         padding-left: $form-icon-padding-side;
     }
 
-    .input-addon--left .iconic{
+    .input-addon--left .icon{
         top: $form-icon-top-indent;
         left: $form-icon-top-indent;
     }
@@ -279,7 +279,7 @@ input[type='radio']{
         padding-right: $form-icon-padding-side;
     }
 
-    .input-addon--right .iconic{
+    .input-addon--right .icon{
         top: $form-icon-top-indent;
         right: $form-icon-side-indent;
     }
