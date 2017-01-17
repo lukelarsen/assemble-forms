@@ -21,9 +21,9 @@
     !GENERAL
 \*------------------------------------*/
 
-[class^='form-'] > li > input,
-[class^='form-'] > li > textarea,
-[class^='form-'] > li > select{
+[class*='form-'] > li > input,
+[class*='form-'] > li > textarea,
+[class*='form-'] > li > select{
     display: block;
     width: 100%;
 }
